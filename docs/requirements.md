@@ -20,6 +20,7 @@ A aplicação será desenvolvida para a plataforma Android, utilizando Kotlin e 
 
 | Sigla | Significado |
 |---|---|
+| ID | Identificador [único] |
 | RF | Requisito Funcional |
 | RNF | Rquisito Não Funcional |
 | RN | Regra de Negócio |
