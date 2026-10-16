@@ -1,5 +1,8 @@
 # Requirements — Sistema de Avaliação Comparativa Multicritério de Produtos (AHP-TOPSIS)
 
+
+---
+
 ## 1. Introdução
 
 ### 1.1 Objetivo
@@ -41,7 +44,11 @@ A definir.
 
 ## 4. Regras de negócio
 
-A definir.
+| ID | Nome | Descrição | Prioridade |
+|---|---|---|---|
+| RN01 | A definir | A definir | A definir |
+| RN02 | A definir | A definir | A definir |
+| RN03 | A definir | A definir | A definir |
 
 ## 5. Restrições técnicas
 
