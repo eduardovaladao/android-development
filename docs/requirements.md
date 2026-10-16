@@ -1,8 +1,6 @@
 # Requirements — Sistema de Avaliação Comparativa Multicritério de Produtos (AHP-TOPSIS)
 
 
----
-
 ## 1. Introdução
 
 ### 1.1 Objetivo
