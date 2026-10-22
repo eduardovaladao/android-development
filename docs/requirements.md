@@ -29,8 +29,20 @@ A aplicação será desenvolvida para a plataforma Android, utilizando Kotlin e 
 
 | ID | Nome | Descrição | Prioridade |
 |---|---|---|---|
-| RF01 | A definir | A definir | A definir |
-| RF02 | A definir | A definir | A definir |
+| RF01 | Exibir tela iniciall | Implementação de inteterface gráfica da tela inicial que conterá as opções "Entrar com login" ou "Entrar como visitante". | Muito Alta |
+| RF02 | Exibir tela com lista de categorias de produtos | Implementação de inteterface gráfica do menu principal. | Muito Alta |
+| RF03 | Exibir tela com lista de produtos | Implementação de interface gráfica para as listas de cada categoria. | Muito Alta |
+| RF04 | Permitir navegação entre telas | Implementação de uma pilha de navegação entre telas e exibição gráfica de atalhos. | Alta |
+| RF05 | Mostrar detalhes dos produtos | Opção para visualização doas informações dos produtos, tais como foto, nome, modelo e fabricante. | Alta |
+| RF06 | Exibir tela de autenticação de usuário | Mostrar formulários para login ou cadastro. | Normal |
+| RF07 | Exibir tela de carregamento | Uma tela de espera entre o início da atividade e o carregamento da tela inicial. | Normal |
+| RF08 | Permitir escolha dos pesos dos critérios | Permite ao usuário controlar os pesos dos pares de critérios usando o método AHP com escala de Saaty de 1 a 9. | Normal |
+| RF09 | Validar consistência do cálculo AHP | Monitora os resultados de cálculo de pesos utilizando Razão de Consistência (RC ≤ 0,10). | Normal |
+| RF10 | Permitir informar os valores dos critérios de cada produto. | Permite ao usuário controlar o valor de cada um dos 5 critérios por produtos. | Normal |
+| RF11 | Revisar as configurações. | Exibe as escolhas feitas e permite voltar atrás. | Normal |
+| RF12 | Processar dados. | Implementação do algoritmo TOPSIS. | Normal |
+| RF13 | Obter resultado | Exibir uma tela contendo o rsultado final e o ranking de produtos. | Normal |
+| RF14 | Salvar resultados | Implementação da análise TOPSIS e ranking de produtos | Baixa |
 
 ### 2.1 Sub-requisitos funcionais
 
