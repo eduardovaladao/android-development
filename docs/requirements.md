@@ -21,6 +21,7 @@ A aplicação será desenvolvida para a plataforma Android, utilizando Kotlin e 
 | Sigla | Significado |
 |---|---|
 | ID | Identificador [único] |
+| IDE | Ambiente de Desenvolvimento Integrado [em inglês] |
 | RF | Requisito Funcional |
 | RNF | Rquisito Não Funcional |
 | RN | Regra de Negócio |
@@ -53,10 +54,13 @@ A aplicação será desenvolvida para a plataforma Android, utilizando Kotlin e 
 
 ## 3. Requisitos não funcionais
 
-| ID | Nome | Descrição | Categoria | Prioridade |
+| ID | Nome | Descrição | Categoria(s) | Prioridade |
 |---|---|---|---|---|
-| RNF01 | A definir | A definir | A definir | A definir |
-| RNF02 | A definir | A definir | A definir | A definir |
+| RNF01 | Interface intuitiva. | A forma como devem ser exibidos os elementos gráficos deve ser de fácil compreensão | Usabilidade | Muito ALta |
+| RNF02 | Interface responsiva. | Os elementos gráficos devem se ajuster a diferentes tamanhos de tela | Portabilidade | Muito ALta |
+| RNF03 | Código modular e bem documentado. | Dividir o código do sistema em módulos bem definidos e documentados corretamente | Manutenabilidade | Muito Alta |
+| RNF04 | Execução computacional instantânea dos cálculos matriciais. | O sistema deve possuir um mecanismo de cálculo otimizado e que atenda com rapidez as solicitações do usuário | Desempenho | Alta |
+| RNF05 | Proteção à autenticação do usuário | Medidas de segurança devem fortalecer o sigilo das informações pessoais e acessos dos usuários | Desempenho | Alta |
 
 ## 4. Regras de negócio
 
@@ -66,9 +70,28 @@ A aplicação será desenvolvida para a plataforma Android, utilizando Kotlin e 
 | RN02 | A definir | A definir | A definir |
 | RN03 | A definir | A definir | A definir |
 
-## 5. Restrições técnicas
+# 5. Restrições técnicas
 
-A definir.
+O desenvolvimento do sistema deverá respeitar as seguintes restrições técnicas e ferramentas previamente definidas pela equipe:
+
+## 5.1. Tecnologias de desenvolvimento
+
+- **Linguagem de programação:** Kotlin, utilizada na implementação da aplicação Android.
+- **IDE**: Android Studio, para facilitar a integração do código com os testes em emuladores ou no próprio dispositivo móvel do desenvolvedor.
+- **Construção da interface:** Jetpack Compose, utilizado para desenvolver as interfaces gráficas do aplicativo.
+- **Arquitetura:** MVVM (Model-View-ViewModel), visando à separação de responsabilidades entre a interface, o gerenciamento de estado e a lógica de negócio.
+
+## 5.2. Controle de versão
+
+O código-fonte e os documentos do projeto deverão ser mantidos em um repositório compartilhado no GitHub, utilizando Git para o controle de versão. O desenvolvimento deverá seguir o fluxo de trabalho definido pela equipe, incluindo o uso de branches e pull requests, conforme as regras estabelecidas no repositório.
+
+## 5.3. Gerenciamento de tarefas
+
+A equipe deverá utilizar o GitHub Projects para registrar, organizar e acompanhar as tarefas relacionadas ao desenvolvimento do sistema. Essa ferramenta deverá auxiliar no acompanhamento do planejamento, na distribuição das atividades e no monitoramento do progresso ao longo do projeto.
+
+## 5.4. Integração com serviços externos
+
+O acesso a dados remotos deverá utilizar a API ou o serviço Firebase definido pela equipe, conforme a solução adotada para a obtenção e disponibilização dos dados necessários ao funcionamento do aplicativo.
 
 ## 6. Dependências e integrações externas
 
