@@ -20,8 +20,10 @@ A aplicação será desenvolvida para a plataforma Android, utilizando Kotlin e 
 
 | Sigla | Significado |
 |---|---|
+| IC | Índice de Consistência |
 | ID | Identificador [único] |
 | IDE | Ambiente de Desenvolvimento Integrado [em inglês] |
+| RC | Razão de Consistência |
 | RF | Requisito Funcional |
 | RNF | Rquisito Não Funcional |
 | RN | Regra de Negócio |
@@ -42,20 +44,35 @@ A aplicação será desenvolvida para a plataforma Android, utilizando Kotlin e 
 | RF10 | Permitir informar os valores dos critérios de cada produto. | Permite ao usuário controlar o valor de cada um dos 5 critérios por produtos. | Normal |
 | RF11 | Revisar as configurações. | Exibe as escolhas feitas e permite voltar atrás. | Normal |
 | RF12 | Processar dados. | Implementação do algoritmo TOPSIS. | Normal |
-| RF13 | Obter resultado | Exibir uma tela contendo o rsultado final e o ranking de produtos. | Normal |
-| RF14 | Salvar resultados | Implementação da análise TOPSIS e ranking de produtos | Baixa |
+| RF13 | Obter resultado | Exibir uma tela contendo o resultado final e o ranking de produtos. | Normal |
+| RF14 | Salvar resultados | Exportar o resultado final para o seu dispositivo | Baixa |
+| RF15 | Iniciar nova avaliação | O usuário pode realizar uma nova avaliação após os resultados da anterior | Normal |
 
 ### 2.1 Sub-requisitos funcionais
 
 | ID | Nome | Descrição | Prioridade |
 |---|---|---|---|
-| RF01.1 | Opção de cadastro | Cria um novo usuário na base de dados remota | Muito Alta |
-| RF01.2 | Opção de login | Permite o usuário retornar sempre com seu perfiu previamente cadastrado | Muito Alta |
-| RF01.3 | Opção de entrar como visitante | Permite o usuário utilizar o serviço sem necessariamente estar logado | Muito Alta |
-| RF02.1 | Carregar cards de categorias | Listar todas as categorias disponíveis em formado de cartões de acesso | Muito Alta |
-| RF03.1 | Carregar lista de produtos | Puxa da base de dados todas os produtos disponíveis em determinada categoria | Muito Alta |
-| RF04.1 | Navegar para configurações do aplicativo | Possibilidade de acessar informaçẽos de usuário e alterar padrões visuais | Normal |
-| RF04.2 | Voltar para a tela anterior | Possibilidade de retroceder pelo caminho de telas acessada | Alta |
+| RF01.1 | Opção de cadastro | Cria um novo usuário na base de dados remota. | Muito Alta |
+| RF01.2 | Opção de login | Permite o usuário retornar sempre com seu perfiu previamente cadastrado. | Muito Alta |
+| RF01.3 | Opção de entrar como visitante | Permite o usuário utilizar o serviço sem necessariamente estar logado. | Muito Alta |
+| RF02.1 | Carregar cards de categorias | Listar todas as categorias disponíveis em formado de cartões de acesso. | Muito Alta |
+| RF03.1 | Carregar lista de produtos | Puxa da base de dados todas os produtos disponíveis em determinada categoria. | Muito Alta |
+| RF04.1 | Navegar para configurações do aplicativo | Possibilidade de acessar informaçẽos de usuário e alterar padrões visuais. | Normal |
+| RF04.2 | Voltar para a tela anterior | Possibilidade de retroceder pelo caminho de telas acessada. | Alta |
+| RF04.2 | Voltar para a tela anterior | Possibilidade de retroceder pelo caminho de telas acessada. | Alta |
+| RF08.1 | Exibir barras de pesos em pares dinamicamente | Cada vez que o usuário alterar um peso de critério, o cálculo das pabrras em será feito. | Normal |
+| RF09.1 | Calcular o Índice de Consistência | Cálculo do IC a partir do autovalor máximo e da quantidade de critérios. | Alta |
+| RF09.2 | Cálculo da Razão de Consistência | Cálculo da RC utilizando o IC e o Índice Aleatório (IR). | Alta |
+| RF09.3 | Identificação de inconsistência | Verificar se a RC ultrapassa o limite de 0,10 (RC > 0,10). | Alta |
+| RF09.4 | Emitir alerta de incosistência | Lança na tela um balão informando que há inconsistência na RC e que os pesos devem ser redefinidos | Alta |
+| RF09.4.1 | Bloquear avanço de processamento de dados | Serve para barrar qualquer tentativa de prosseguir sem uma RC válida. | Alta |
+| RF10.1 | Listar todos os produtos da categoria selecionada para avaliação | Para cada produto da lista, um cartão de informações sucintas será exibido. | Normal |
+| RF11.1 | Exibir Matriz de Decisão | Mostra na tela a matriz montada pelo cálculo AHP | Normal |
+| RF12.1 | Iniciar processamento TOPSIS | O usuário deverá clicar em um botão para confirmar | Normal |
+| RF13.1 | Mostrar cartões dos produtos listados no resultado final | A exibição não passará de uma lista vertical de cartões dos produtos já ordenados pelo algoritmo TOPSIS | Alta |
+| RF13.2 | Exibir o coeficiente de proximidade de cada alternativa | Mostrar ao usuário os números utilizados no cálculo TOPSIS | Baixa |
+| RF13.3 | Exibir as distâncias euclidianas D+ e D− de cada alternativa | Mostrar ao usuário barras de comprimento proporcionais às distâncias euclidianas dadas pelo TOPSIS | Baixa |
+| RF14.1 | Salvar o resultado de forma local | Utilizar Room ou DataStore fornecidos pela linguagem Kotlin | Levíssima |
 
 ## 3. Requisitos não funcionais
 
@@ -66,6 +83,7 @@ A aplicação será desenvolvida para a plataforma Android, utilizando Kotlin e 
 | RNF03 | Código modular e bem documentado. | Dividir o código do sistema em módulos bem definidos e documentados corretamente | Manutenabilidade | Muito Alta |
 | RNF04 | Execução computacional instantânea dos cálculos matriciais. | O sistema deve possuir um mecanismo de cálculo otimizado e que atenda com rapidez as solicitações do usuário | Desempenho | Alta |
 | RNF05 | Proteção à autenticação do usuário | Medidas de segurança devem fortalecer o sigilo das informações pessoais e acessos dos usuários | Desempenho | Alta |
+| RNF05 | Persistência local ou remota de dados | O sistema vai salvar os resultados finais de cada avaliação | Levíssima |
 
 # 4. Restrições técnicas
 
