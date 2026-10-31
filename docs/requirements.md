@@ -49,8 +49,13 @@ A aplicação será desenvolvida para a plataforma Android, utilizando Kotlin e 
 
 | ID | Nome | Descrição | Prioridade |
 |---|---|---|---|
-| RF01.1 | A definir | A definir | A definir |
-| RF01.2 | A definir | A definir | A definir |
+| RF01.1 | Opção de cadastro | Cria um novo usuário na base de dados remota | Muito Alta |
+| RF01.2 | Opção de login | Permite o usuário retornar sempre com seu perfiu previamente cadastrado | Muito Alta |
+| RF01.3 | Opção de entrar como visitante | Permite o usuário utilizar o serviço sem necessariamente estar logado | Muito Alta |
+| RF02.1 | Carregar cards de categorias | Listar todas as categorias disponíveis em formado de cartões de acesso | Muito Alta |
+| RF03.1 | Carregar lista de produtos | Puxa da base de dados todas os produtos disponíveis em determinada categoria | Muito Alta |
+| RF04.1 | Navegar para configurações do aplicativo | Possibilidade de acessar informaçẽos de usuário e alterar padrões visuais | Normal |
+| RF04.2 | Voltar para a tela anterior | Possibilidade de retroceder pelo caminho de telas acessada | Alta |
 
 ## 3. Requisitos não funcionais
 
@@ -62,34 +67,26 @@ A aplicação será desenvolvida para a plataforma Android, utilizando Kotlin e 
 | RNF04 | Execução computacional instantânea dos cálculos matriciais. | O sistema deve possuir um mecanismo de cálculo otimizado e que atenda com rapidez as solicitações do usuário | Desempenho | Alta |
 | RNF05 | Proteção à autenticação do usuário | Medidas de segurança devem fortalecer o sigilo das informações pessoais e acessos dos usuários | Desempenho | Alta |
 
-## 4. Regras de negócio
-
-| ID | Nome | Descrição | Prioridade |
-|---|---|---|---|
-| RN01 | A definir | A definir | A definir |
-| RN02 | A definir | A definir | A definir |
-| RN03 | A definir | A definir | A definir |
-
-# 5. Restrições técnicas
+# 4. Restrições técnicas
 
 O desenvolvimento do sistema deverá respeitar as seguintes restrições técnicas e ferramentas previamente definidas pela equipe:
 
-## 5.1. Tecnologias de desenvolvimento
+## 4.1. Tecnologias de desenvolvimento
 
 - **Linguagem de programação:** Kotlin, utilizada na implementação da aplicação Android.
 - **IDE**: Android Studio, para facilitar a integração do código com os testes em emuladores ou no próprio dispositivo móvel do desenvolvedor.
 - **Construção da interface:** Jetpack Compose, utilizado para desenvolver as interfaces gráficas do aplicativo.
 - **Arquitetura:** MVVM (Model-View-ViewModel), visando à separação de responsabilidades entre a interface, o gerenciamento de estado e a lógica de negócio.
 
-## 5.2. Controle de versão
+## 4.2. Controle de versão
 
 O código-fonte e os documentos do projeto deverão ser mantidos em um repositório compartilhado no GitHub, utilizando Git para o controle de versão. O desenvolvimento deverá seguir o fluxo de trabalho definido pela equipe, incluindo o uso de branches e pull requests, conforme as regras estabelecidas no repositório.
 
-## 5.3. Gerenciamento de tarefas
+## 4.3. Gerenciamento de tarefas
 
 A equipe deverá utilizar o GitHub Projects para registrar, organizar e acompanhar as tarefas relacionadas ao desenvolvimento do sistema. Essa ferramenta deverá auxiliar no acompanhamento do planejamento, na distribuição das atividades e no monitoramento do progresso ao longo do projeto.
 
-## 5.4. Integração com serviços externos
+## 4.4. Integração com serviços externos
 
 O acesso a dados remotos deverá utilizar a API ou o serviço Firebase definido pela equipe, conforme a solução adotada para a obtenção e disponibilização dos dados necessários ao funcionamento do aplicativo.
 
