@@ -93,26 +93,20 @@ O desenvolvimento do sistema deverá respeitar as seguintes restrições técnic
 
 - **Linguagem de programação:** Kotlin, utilizada na implementação da aplicação Android.
 - **IDE:** _Android Studio_, para facilitar a integração do código com os testes em emuladores ou no próprio dispositivo móvel do desenvolvedor.
-- **Construção da interface:** Jetpack Compose, utilizado para desenvolver as interfaces gráficas do aplicativo.
-- **Injeção de Dependências:** Hilt, para acelerar a codificação e automatizar o ciclo de vida das dependências de classes.
-- **Arquitetura:** MVVM (Model-View-ViewModel), visando à separação de responsabilidades entre a interface, o gerenciamento de estado e a lógica de negócio.
+- **Construção da interface:** _Jetpack Compose_, utilizado para desenvolver as interfaces gráficas do aplicativo.
+- **Injeção de Dependências:** _Hilt_, para acelerar a codificação e automatizar o ciclo de vida das dependências de classes.
+- **Arquitetura:** MVVM (_Model-View-ViewModel_), visando à separação de responsabilidades entre a interface, o gerenciamento de estado e a lógica de negócio.
 
 ## 4.2. Controle de versão
 
-O código-fonte e os documentos do projeto deverão ser mantidos em um repositório compartilhado no GitHub, utilizando Git para o controle de versão. O desenvolvimento deverá seguir o fluxo de trabalho definido pela equipe, incluindo o uso de branches e pull requests, conforme as regras estabelecidas no repositório.
+O código-fonte e os documentos do projeto deverão ser mantidos em um repositório compartilhado no _GitHub_, utilizando _Git_ para o controle de versão. O desenvolvimento deverá seguir o fluxo de trabalho definido pela equipe, incluindo o uso de _branches_ e _pull requests_, conforme as regras estabelecidas no repositório.
 
 ## 4.3. Gerenciamento de tarefas
 
-A equipe deverá utilizar o GitHub Projects para registrar, organizar e acompanhar as tarefas relacionadas ao desenvolvimento do sistema. Essa ferramenta deverá auxiliar no acompanhamento do planejamento, na distribuição das atividades e no monitoramento do progresso ao longo do projeto.
+A equipe deverá utilizar o _GitHub Projects_ para registrar, organizar e acompanhar as tarefas relacionadas ao desenvolvimento do sistema. Essa ferramenta deverá auxiliar no acompanhamento do planejamento, na distribuição das atividades e no monitoramento do progresso ao longo do projeto.
 
 ## 4.4. Integração com serviços externos
 
-O acesso a dados remotos deverá utilizar a API ou o serviço Firebase definido pela equipe, conforme a solução adotada para a obtenção e disponibilização dos dados necessários ao funcionamento do aplicativo.
-
-# 5. Dependências e integrações externas
-
-O sistema dependerá de alguns recursos oferecidos por uma fonte de dados remota.
-
-## 5.1. Sistema de base de dados remoto
+O acesso a dados remotos deverá utilizar a API ou o serviço _Firebase_ definido pela equipe, conforme a solução adotada para a obtenção e disponibilização dos dados necessários ao funcionamento do aplicativo.
 
 - **Firebase:** será utilizado para registrar os usuários do sistema na nuvem e fornecer os dados das categorias de produtos a partir de uma base de dados orientada a documentos (o padrão do serviço).
