@@ -82,8 +82,8 @@ A aplicação será desenvolvida para a plataforma Android, utilizando Kotlin e 
 | RNF02 | Interface responsiva. | Os elementos gráficos devem se ajuster a diferentes tamanhos de tela | Portabilidade | Muito ALta |
 | RNF03 | Código modular e bem documentado. | Dividir o código do sistema em módulos bem definidos e documentados corretamente | Manutenabilidade | Muito Alta |
 | RNF04 | Execução computacional instantânea dos cálculos matriciais. | O sistema deve possuir um mecanismo de cálculo otimizado e que atenda com rapidez as solicitações do usuário | Desempenho | Alta |
-| RNF05 | Proteção à autenticação do usuário | Medidas de segurança devem fortalecer o sigilo das informações pessoais e acessos dos usuários | Desempenho | Alta |
-| RNF05 | Persistência local ou remota de dados | O sistema vai salvar os resultados finais de cada avaliação | Levíssima |
+| RNF05 | Proteção à autenticação do usuário | Medidas de segurança devem fortalecer o sigilo das informações pessoais e acessos dos usuários | Segurança | Alta |
+| RNF05 | Persistência local ou remota de dados | O sistema vai salvar os resultados finais de cada avaliação | Interoperabilidade | Levíssima |
 
 # 4. Restrições técnicas
 
@@ -92,8 +92,9 @@ O desenvolvimento do sistema deverá respeitar as seguintes restrições técnic
 ## 4.1. Tecnologias de desenvolvimento
 
 - **Linguagem de programação:** Kotlin, utilizada na implementação da aplicação Android.
-- **IDE**: Android Studio, para facilitar a integração do código com os testes em emuladores ou no próprio dispositivo móvel do desenvolvedor.
+- **IDE:** _Android Studio_, para facilitar a integração do código com os testes em emuladores ou no próprio dispositivo móvel do desenvolvedor.
 - **Construção da interface:** Jetpack Compose, utilizado para desenvolver as interfaces gráficas do aplicativo.
+- **Injeção de Dependências:** Hilt, para acelerar a codificação e automatizar o ciclo de vida das dependências de classes.
 - **Arquitetura:** MVVM (Model-View-ViewModel), visando à separação de responsabilidades entre a interface, o gerenciamento de estado e a lógica de negócio.
 
 ## 4.2. Controle de versão
@@ -108,6 +109,10 @@ A equipe deverá utilizar o GitHub Projects para registrar, organizar e acompanh
 
 O acesso a dados remotos deverá utilizar a API ou o serviço Firebase definido pela equipe, conforme a solução adotada para a obtenção e disponibilização dos dados necessários ao funcionamento do aplicativo.
 
-## 6. Dependências e integrações externas
+# 5. Dependências e integrações externas
 
-A definir.
+O sistema dependerá de alguns recursos oferecidos por uma fonte de dados remota.
+
+## 5.1. Sistema de base de dados remoto
+
+- **Firebase:** será utilizado para registrar os usuários do sistema na nuvem e fornecer os dados das categorias de produtos a partir de uma base de dados orientada a documentos (o padrão do serviço).
