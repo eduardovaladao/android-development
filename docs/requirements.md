@@ -26,7 +26,6 @@ A aplicação será desenvolvida para a plataforma Android, utilizando Kotlin e 
 | RC | Razão de Consistência |
 | RF | Requisito Funcional |
 | RNF | Rquisito Não Funcional |
-| RN | Regra de Negócio |
 
 ## 2. Requisitos funcionais
 
