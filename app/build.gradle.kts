@@ -65,13 +65,15 @@ dependencies {
     implementation(libs.androidx.material3.adaptive.navigation3)
     implementation(libs.kotlinx.serialization.core)
 
-    val roomVersion = "2.6.1" // Versão estável (ou 3.0.x para ecossistemas KMP)
+    val roomVersion = "2.8.5" // Versão estável (ou 3.0.x para ecossistemas KMP)
 // Componentes fundamentais do Room
     implementation("androidx.room:room-runtime:$roomVersion")
     implementation("androidx.room:room-ktx:$roomVersion") // Suporte a Corrotinas e Kotlin Extensions
 // Suporte opcional para Paging 3 e Testes
     implementation("androidx.room:room-paging:$roomVersion")
     testImplementation("androidx.room:room-testing:$roomVersion")
+    // Room Compiler (necessário pra o aplicativo não dar crash
+    ksp("androidx.room:room-compiler:$roomVersion")
 
     // Hilt
     implementation(libs.hilt.android)

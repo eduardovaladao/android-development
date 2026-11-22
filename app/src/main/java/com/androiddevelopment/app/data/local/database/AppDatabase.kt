@@ -11,8 +11,6 @@ import com.androiddevelopment.app.data.local.entity.VisitorUserEntity
 @Database(
         entities = [
                 VisitorUserEntity::class,
-                CategoryEntity::class,
-                ProductEntity::class
         ],
         version = 1,
         exportSchema = true
