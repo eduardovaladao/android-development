@@ -18,4 +18,6 @@ abstract class RepositoryModule {
     abstract fun bindVisitorUserRepository(
         impl: VisitorUserRepositoryImpl
     ): VisitorUserRepository
+
+
 }

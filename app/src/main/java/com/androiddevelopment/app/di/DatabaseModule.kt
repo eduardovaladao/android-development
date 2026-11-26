@@ -3,7 +3,7 @@ package com.androiddevelopment.app.di
 import android.content.Context
 import androidx.room.Room
 import com.androiddevelopment.app.MainApplication
-import com.androiddevelopment.app.data.local.dao.VisitorUserDao
+import com.androiddevelopment.app.data.local.dao.*
 import com.androiddevelopment.app.data.local.database.AppDatabase
 import dagger.Module
 import dagger.Provides
@@ -34,4 +34,25 @@ object DatabaseModule {
     ): VisitorUserDao {
         return database.visitorUserDao()
     }
+
+    @Provides
+    fun provideProductDao(
+        database: AppDatabase
+    ): ProductDao {
+        return database.productDao()
+    }
+
+    @Provides
+    fun provideCategoryrDao(
+        database: AppDatabase
+    ): CategoryDao {
+        return database.categoryDao()
+    }
+    @Provides
+    fun provideDecisionResultDao(
+        database: AppDatabase
+    ): DecisionResultDao {
+        return database.decisionResultDao()
+    }
+
 }
